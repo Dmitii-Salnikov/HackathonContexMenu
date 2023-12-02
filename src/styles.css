@@ -12,6 +12,8 @@ body {
     height: 100vh;
     width: 100%;
     padding: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .menu {
@@ -22,10 +24,14 @@ body {
     border-radius: 5px;
     display: none;
     list-style: none;
+    transition: all .3s ease;
 }
 
 .menu.open {
     display: block;
+    color: white;
+    padding: 10px;
+    position: absolute;
 }
 
 .menu .menu-item {
