@@ -12,6 +12,8 @@ body {
     height: 100vh;
     width: 100%;
     padding: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .menu {
@@ -22,10 +24,16 @@ body {
     border-radius: 5px;
     display: none;
     list-style: none;
+    transition: all .3s ease;
 }
 
 .menu.open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    gap: 5px;
 }
 
 .menu .menu-item {
@@ -33,15 +41,19 @@ body {
     font-size: 1rem;
     color: #eee;
     cursor: pointer;
-    transition: background-color .2s ease-in;
+    transition: all .3s ease-in;
     border-radius: inherit;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #fff;
 }
 
 .menu .menu-item:hover {
-    background: #343434;
+    background: #fff;
+    border: 1px solid #fff;
+    color: black;
 }
 
-.container {
+.container-count {
     max-width: 1000px;
     margin: auto;
     text-align: center;
