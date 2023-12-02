@@ -40,3 +40,20 @@ body {
 .menu .menu-item:hover {
     background: #343434;
 }
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+.timerValueBlock {
+    width: 200px;
+    min-height: 100px;
+    background: #ababab;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
