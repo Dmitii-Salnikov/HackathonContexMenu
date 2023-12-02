@@ -4,7 +4,7 @@ export class TimerModule extends Module {
 
     #renderElement(){
         const container = document.createElement('div')
-        container.className = 'container'
+        container.className = 'container-timer'
         document.body.append(container)
 
         const timeValueBlock = document.createElement('div')
@@ -21,7 +21,7 @@ export class TimerModule extends Module {
         timerBtn.value = 'Старт'
 
         const timerValueBlock = document.createElement('div')
-        timerValueBlock.className = 'timerValueBlock'
+        timerValueBlock.className = 'timer-value-block'
 
         const spanTimerInDiv = document.createElement('span')
         spanTimerInDiv.textContent = 'Начинаем отсчет времени'
@@ -39,11 +39,11 @@ export class TimerModule extends Module {
 
        const {timeForm, container, timerValueBlock, spanTimerInDiv} = this.#renderElement()
 
-        timeForm.addEventListener('submit',(e)=>{
-            e.preventDefault()
+        timeForm.addEventListener('submit',(event)=>{
+            event.preventDefault()
             container.append(timerValueBlock)
-            let timerValue = Number(e.target.number.value)
-            e.target.number.value = '' 
+            let timerValue = Number(event.target.number.value)
+            event.target.number.value = '' 
             
             const interval = setInterval(()=>{
 
@@ -54,6 +54,7 @@ export class TimerModule extends Module {
                         timerValueBlock.remove()
                         spanTimerInDiv.textContent = 'Начинаем отсчет времени'
                     },1000)
+                    timeForm.remove()                    
                 } else{                                       
                     spanTimerInDiv.textContent = timerValue
                     timerValue--

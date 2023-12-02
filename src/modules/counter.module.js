@@ -9,6 +9,7 @@ export class CounterModule extends Module {
         spanCounter.className = 'counter'
         spanCounter.textContent = `Вы кликнули ${count} раз за ${time/1000} секунды`
         container.append(spanCounter)
+        setTimeout(() => { spanCounter.remove() }, 3000)
         
     }
 

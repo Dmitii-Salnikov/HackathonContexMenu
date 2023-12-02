@@ -34,6 +34,8 @@ body {
     padding: 10px;
     position: absolute;
     gap: 5px;
+    min-width: 200px;
+    max-width: 100%;
 }
 
 .menu .menu-item {
@@ -59,7 +61,13 @@ body {
     text-align: center;
 }
 
-.timerValueBlock {
+.container-timer {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.timer-value-block {
     width: 200px;
     min-height: 100px;
     background: #ababab;

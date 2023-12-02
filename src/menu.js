@@ -12,7 +12,7 @@ export class ContextMenu extends Menu {
     }
 
     add(moduleHtml) {
-        this.el.innerHTML = moduleHtml
+        this.el.innerHTML += moduleHtml
     }
 
     close() {
