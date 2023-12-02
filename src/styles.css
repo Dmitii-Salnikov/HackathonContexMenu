@@ -40,3 +40,9 @@ body {
 .menu .menu-item:hover {
     background: #343434;
 }
+
+.container-count {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
