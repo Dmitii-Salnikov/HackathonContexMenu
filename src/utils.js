@@ -9,3 +9,7 @@ export function getRandomColor() {
 
   return `rgb(${red}, ${green}, ${blue})`;
 }
+
+export function getRandomItem(items) {
+  return items[Math.floor(Math.random() * items.length)]
+}
