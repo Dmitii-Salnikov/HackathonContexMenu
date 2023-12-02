@@ -57,3 +57,19 @@ body {
     justify-content: center;
     align-items: center;
 }
+input#number {
+    outline: none;
+    height: 30px;
+    font-size: 20px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px solid gray;
+}
+input[type="submit"] {
+    margin-left: 20px;
+    padding: 4px;
+    background: #53ef62;
+    border: 1px solid #44924c;
+    border-radius: 3px;
+}
