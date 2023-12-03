@@ -38,5 +38,3 @@ export class MessageModule extends Module {
         this.#hideMessage()
     }
 }
-const message = new MessageModule()
-console.log(message)
